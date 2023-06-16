@@ -16,7 +16,7 @@ ul {
 /* Body */
 .body,
 .body-portfolio {
-  font-family:"Raleway", sans-serif;
+  font-family:"Roboto", sans-serif;
   line-height: 1.2;
   letter-spacing: 0.02em; 
   color: var(--text);
@@ -30,7 +30,7 @@ ul {
 .header-nav {
 }
 
-.header-logo {
+.header-logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -147,6 +147,7 @@ ul {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
+  color:var(--dark);
 }
 
 .benefits-text {
@@ -168,6 +169,7 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--dark);
 }
 
 .made-list {
@@ -190,6 +192,7 @@ ul {
 }
 
 .team-item {
+  background-color: #FFFFFF
 }
 
 .team-img {
@@ -211,7 +214,7 @@ ul {
   background: var(--dark);
 }
 
-.footer-logo {
+.footer-logo-link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;

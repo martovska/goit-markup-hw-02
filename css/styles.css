@@ -11,16 +11,16 @@ ul {
   --white-background: #ffffff;
   --light: #f4f4fd;
   --modal-background: #fcfcfc;
-  --primary-font: "Roboto";
 }
 
 /* Body */
 .body,
 .body-portfolio {
+  font-family:"Raleway", sans-serif;
   line-height: 1.2;
-  letter-spacing: 0.02em;
-  font-family: var(--primary-font);
+  letter-spacing: 0.02em; 
   color: var(--text);
+  background-color: var(--white-background);
 }
 
 /*Header styles*/
@@ -31,20 +31,24 @@ ul {
 }
 
 .header-logo {
-  list-style-type: none;
-  text-decoration: none;
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--primary-brand);
-  font-family: "Raleway";
+  list-style-type: none;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .logo-up {
   color: var(--dark);
+  text-decoration: none;
 }
 
 .header-list {
+  list-style: none;
 }
 
 .header-item {
@@ -53,6 +57,8 @@ ul {
 .header-link {
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--dark);
   list-style-type: none;
   text-decoration: none;
@@ -64,9 +70,11 @@ ul {
 }
 
 .header-address {
+  font-style: normal;
 }
 
 .header-address-list {
+  list-style: none;
 }
 
 .header-address-item {
@@ -74,6 +82,8 @@ ul {
 
 .header-address-link {
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--text);
   list-style-type: none;
   text-decoration: none;
@@ -99,25 +109,28 @@ ul {
 .hero-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
   color: var(--white-background);
 }
 
 .hero-btn {
-  background: var(--primary-brand);
-  border-radius: 4px;
-  border: var(--primary-brand);
-  color: var(--white-background);
+  
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  color: var(--white-background);
+  background: var(--primary-brand);
+  border: var(--primary-brand);
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--pressed-state);
-  border-radius: 4px;
 }
 
 /* Section benefits */
@@ -133,10 +146,13 @@ ul {
 .benefits-title {
   font-weight: 500;
   font-size: 20px;
+  letter-spacing: 0.02em;
 }
 
 .benefits-text {
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--text);
 }
 
@@ -148,7 +164,10 @@ ul {
 .team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 .made-list {
@@ -183,6 +202,8 @@ ul {
 
 .team-text {
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* Footer */
@@ -191,11 +212,13 @@ ul {
 }
 
 .footer-logo {
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   color: var(--primary-brand);
-  font-family: "Raleway";
+  text-transform:uppercase;
   list-style-type: none;
   text-decoration: none;
 }
@@ -206,12 +229,11 @@ ul {
 
 .footer-text {
   font-size: 16px;
+  line-height: 1.5;
   color: var(--light);
 }
 
 /* Portfolio main*/
-.body-portfolio {
-}
 
 .main-portfolio {
 }
@@ -230,9 +252,13 @@ ul {
 }
 
 .portfolio-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   background: var(--light);
   border: 1px solid var(--modal-background);
-  border-radius: 4px;
   color: var(--primary-brand);
   cursor: pointer;
 }
@@ -244,9 +270,11 @@ ul {
 }
 
 .portfolio-list {
+  list-style: none;
 }
 
 .portfolio-link {
+  text-decoration: none;
   list-style-type: none;
   text-decoration: none;
 }
@@ -255,13 +283,16 @@ ul {
 }
 
 .portfolio-title {
-  line-height: 1.2;
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: var(--dark);
 }
 
 .portfolio-text {
   font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--text);
 }

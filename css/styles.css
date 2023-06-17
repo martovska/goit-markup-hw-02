@@ -3,6 +3,10 @@ ul {
   text-decoration: none;
 }
 
+.link {
+  text-decoration: none ;
+}
+
 :root {
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
@@ -14,11 +18,8 @@ ul {
 }
 
 /* Body */
-.body,
-.body-portfolio {
+body {
   font-family:"Roboto", sans-serif;
-  line-height: 1.2;
-  letter-spacing: 0.02em; 
   color: var(--text);
   background-color: var(--white-background);
 }
@@ -37,14 +38,11 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-brand);
-  list-style-type: none;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .logo-up {
   color: var(--dark);
-  text-decoration: none;
 }
 
 .header-list {
@@ -60,8 +58,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
-  list-style-type: none;
-  text-decoration: none;
 }
 
 .header-link:hover,
@@ -85,8 +81,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
-  list-style-type: none;
-  text-decoration: none;
 }
 
 .header-address-link:hover,
@@ -146,6 +140,7 @@ ul {
 .benefits-title {
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color:var(--dark);
 }
@@ -201,6 +196,7 @@ ul {
 .team-subtitle {
   font-weight: 500;
   font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
 }
@@ -224,8 +220,6 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-brand);
   text-transform:uppercase;
-  list-style-type: none;
-  text-decoration: none;
 }
 
 .logo-down {
@@ -235,6 +229,7 @@ ul {
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
   color: var(--light);
 }
 
@@ -279,9 +274,6 @@ ul {
 }
 
 .portfolio-link {
-  text-decoration: none;
-  list-style-type: none;
-  text-decoration: none;
 }
 
 .portfolio-img {

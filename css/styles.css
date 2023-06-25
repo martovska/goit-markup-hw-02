@@ -54,7 +54,7 @@ body {
 /*Header styles*/
 .header {
   margin: 0 auto;
-  border-bottom: 1px solid; 
+  border-bottom: 1px solid #e7e9fc
 }
 
 .header-container {
@@ -87,10 +87,11 @@ body {
 .header-list {
   list-style: none;
   display: flex;
-  
+  gap: 40px;
 }
 
 .header-item {
+  padding: 24px 0;
 }
 
 .header-link {
@@ -99,7 +100,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
-  margin-right: 40px;
 }
 
 .header-link:hover,
@@ -116,9 +116,11 @@ body {
 .header-address-list {
   list-style: none;
   display: flex;
+  gap: 40px;
 }
 
 .header-address-item {
+  padding: 24px 0;
 }
 
 .header-address-link {
@@ -126,7 +128,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
-  margin-right: 40px;
 }
 
 .header-address-link:hover,
@@ -155,7 +156,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-background);
-  width: 496px;
+  max-width: 496px;
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
@@ -173,6 +174,7 @@ body {
   background: var(--primary-brand);
   border: var(--primary-brand);
   cursor: pointer;
+  min-width: 169px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
@@ -195,17 +197,20 @@ body {
 .benefits-list {
   display: flex;
   flex-basis: 1128px;
+  gap: 24px;
 }
 
 .benefits-item {
-  margin-right: 24px;
+  width: calc((100% - 72px) / 4);
 }
-.benefits-title {
+
+.benefits-title .visually-hidden {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -230,18 +235,18 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--dark);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   
 }
 
 .made-list {
   display: flex;
   flex-basis: 1128px;
+  gap: 24px;
 }
 
 .made-item {
-  
-  margin-right: 24px;
+  width: calc((100% - 48px) / 3);
 }
 
 .made-img {
@@ -261,19 +266,21 @@ body {
 
 .team-list {
   display: flex;
-  
+  gap: 24px;
 }
 
 .team-item {
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   flex-basis: 1128px;
-  margin-right: 24px;
 }
 
 .team-img {
   padding: 0;
+
+
 }
 
 .container-team-text {
@@ -288,6 +295,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+  margin-bottom: 8px
 }
 
 .team-text {
@@ -311,6 +319,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-brand);
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-down {
@@ -323,7 +333,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--light);
   width: 264px;
-  margin-top: 16px;
 }
 
 /* Portfolio main*/
@@ -337,6 +346,7 @@ body {
 .portfolio {
   margin: 0;
   max-width: 100%;
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 
@@ -345,13 +355,8 @@ body {
 }
 
 .btn-container{
-display:flex;
-justify-content: center;
-padding: 0;
-margin-top: 96px;
-margin-right: auto;
-margin-bottom: 72px;
-margin-left: auto;
+
+ 
 }
 
 .portfolio-list-btn {
@@ -360,7 +365,6 @@ margin-left: auto;
 }
 
 .portfolio-item-btn {
-  margin-right: 24px;
 }
 
 .portfolio-btn {
@@ -383,10 +387,20 @@ margin-left: auto;
 }
 
 .portfolio-list {
+  display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 96px;
+    margin-right: auto;
+    margin-bottom: 72px;
+    margin-left: auto;
+    gap: 24px;
 
 }
 
 .portfolio-item{
+  border: 1px solid var(--cornflower, #E7E9FC);
+  width: calc((100%-3*24px)/3);
 }
 
 .container-portfolio-link {
@@ -394,13 +408,11 @@ margin-left: auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-flex-wrap: wrap;
   gap: 48px 24px;
 }
 
 .portfolio-link {
-  border: 1px solid var(--cornflower, #E7E9FC);
-    width: calc((100%-3*24px)/3);
+ 
 }
 
 .portfolio-img {}
@@ -411,7 +423,7 @@ flex-wrap: wrap;
   margin: 32px 0 ;
 }
 
-.portfolio-title {
+.portfolio-title  .visually-hidden{
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;

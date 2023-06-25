@@ -88,10 +88,11 @@ body {
   list-style: none;
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
+
 .header-item {
-  padding: 24px 0;
 }
 
 .header-link {
@@ -117,10 +118,11 @@ body {
   list-style: none;
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 
+
 .header-address-item {
-  padding: 24px 0;
 }
 
 .header-address-link {
@@ -204,13 +206,18 @@ body {
   width: calc((100% - 72px) / 4);
 }
 
-.benefits-title .visually-hidden {
+.benefits-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
   margin-bottom: 8px;
+}
+
+.visually-hidden{
+position: absolute;
+clip: rect(0 0 0 0);
 }
 
 .benefits-text {
@@ -423,7 +430,7 @@ body {
   margin: 32px 0 ;
 }
 
-.portfolio-title  .visually-hidden{
+.portfolio-title  {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;

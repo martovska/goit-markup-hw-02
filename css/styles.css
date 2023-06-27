@@ -102,7 +102,6 @@ body {
   list-style: none;
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 
@@ -115,6 +114,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
+  display: block;
   padding: 24px 0;
 }
 
@@ -142,6 +142,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text);
+  display: block;
   padding: 24px 0;
 }
 
@@ -407,7 +408,6 @@ body {
 }
 
 .portfolio-item{
-  border: 1px solid var(--cornflower, #E7E9FC);
   width: calc((100% - 48px) / 3);
   min-width: 360px;
 }
